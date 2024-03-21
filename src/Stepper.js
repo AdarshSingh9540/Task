@@ -8,8 +8,8 @@ const Stepper = () => {
   const [complete, setComplete] = useState(false);
 
   const handlePrevClick = () => {
-    setCurrentStep(prev => Math.max(1, prev - 1)); // Ensure currentStep doesn't go below 1
-    if (complete) setComplete(false); // Reset complete flag if going back from a completed step
+    setCurrentStep(prev => Math.max(1, prev - 1)); 
+    if (complete) setComplete(false);
   };
 
   return (
